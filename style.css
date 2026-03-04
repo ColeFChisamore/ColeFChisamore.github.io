@@ -1,0 +1,119 @@
+
+/* Importing a font from google */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body{
+    background-color:white;
+    color:black;
+    font-family:"Space Grotesk", sans-serif;
+}
+
+/* 
+Header 
+*/
+header{
+    background-color: orange;
+}
+/* Logo
+- Keep logo to the left of the Header
+*/
+.logo{
+    float:left;
+}
+/* Heading
+- Slightly larger font
+*/
+.heading{
+    font-size:48px;
+}
+/* Subheading
+- Slightly smaller font
+*/
+.subheading{
+    font-size:20px;
+}
+/* Both Heading and Subheading
+- center aligned
+*/
+.heading, .subheading{
+    text-align:center;
+}
+
+
+/* Navigation Bar */
+header nav{
+    background-color: orchid;
+    margin:0;
+    clear:both;
+}
+/* Navigation Bar List */
+header nav ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    position:relative;
+    float:left;
+}
+/* Navigation Bar List Items*/
+header nav ul li{
+    display:inline-block;
+    background-color: aqua;
+}
+/* Navigation Bar Links
+- display as a block
+- pad left and right by 10px
+- increase width between lines to 40px (250% of 16px)
+- remove underlines from links
+*/
+header nav a{
+    display:block;
+    padding: 0px 10px;
+    font-size:16px;
+    line-height:250%;
+    text-decoration:none;
+}
+/* Navigation Bar Links when hovered
+- changes colours
+*/
+header nav a:hover{
+    background-color:brown;
+    color:white;
+}
+/* Menu 
+- only shows up on small window
+*/
+.menu{
+    display:none;
+}
+
+
+/* Main Content class */
+.main{
+    clear:both;
+}
+div{
+}
+footer{
+    background-color: chartreuse;
+}
+
+/* 
+Changes are made when the width of the page is less than 740px 
+*/
+@media all and (max-width:740px){
+    /* Body changes colour */
+    body{background-color: greenyellow;}
+    /* Navigation list items change orientation and center*/
+    header nav ul li{display:block;text-align:center;}
+    /* Navigation list fills width of window */
+    header nav ul{width:100%;}
+    /* Menu 
+    - aligns and displays 
+    */
+    .menu{
+        width:100%;
+        background-color:aqua;
+        display:block;
+        text-align:center;
+    }
+}
