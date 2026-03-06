@@ -43,7 +43,6 @@ header{
 
 /* Navigation Bar */
 header nav{
-    background-color: orchid;
     margin:0;
     clear:both;
 }
@@ -92,13 +91,14 @@ header nav a:hover, header nav .menu:hover{
 /* Main Content class */
 .main{
     clear:both;
-    background-color: pink;
+    background-color: white;
 }
 
 .main img{
     float:left;
     padding:10px;
 }
+
 /* Main Articles
 - pad around by 10px
 - add border on bottom
@@ -112,6 +112,10 @@ header nav a:hover, header nav .menu:hover{
 .main article p::first-letter{
     font-size:200%;
     color:darkred;
+}
+.main article div{
+    font-size:200%;
+
 }
 
 
