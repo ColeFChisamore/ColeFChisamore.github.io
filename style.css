@@ -19,6 +19,7 @@ header{
 */
 .logo{
     float:left;
+    padding:10px;
 }
 /* Heading
 - Slightly larger font
@@ -46,6 +47,7 @@ header nav{
     margin:0;
     clear:both;
 }
+
 /* Navigation Bar List */
 header nav ul{
     list-style:none;
@@ -72,10 +74,10 @@ header nav a{
     line-height:250%;
     text-decoration:none;
 }
-/* Navigation Bar Links when hovered
+/* Navigation Bar Links and Menu when hovered
 - changes colours
 */
-header nav a:hover{
+header nav a:hover, header nav .menu:hover{
     background-color:brown;
     color:white;
 }
@@ -90,11 +92,59 @@ header nav a:hover{
 /* Main Content class */
 .main{
     clear:both;
+    background-color: pink;
 }
-div{
+
+.main img{
+    float:left;
+    padding:10px;
 }
-footer{
+/* Main Articles
+- pad around by 10px
+- add border on bottom
+- prevent overflow between articles
+*/
+.main article{
+    padding:10px;
+    border-bottom:1px solid black;
+    overflow:hidden;
+}
+.main article p::first-letter{
+    font-size:200%;
+    color:darkred;
+}
+
+
+.footer{
+    height:200px;
     background-color: chartreuse;
+    text-align:center;
+}
+.footer div{
+    float:left;
+}
+/* Footer Paragraphs
+- centers items vertically
+*/
+.footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col1,.col3{
+    width:30%;
+}
+.col2{
+    width:40%;
+}
+.hide{
+    display:block;
+}
+
+.footer .icon{
+    width:20px;
+    height:20px;
+    padding:10px;
 }
 
 /* 
@@ -102,7 +152,7 @@ Changes are made when the width of the page is less than 740px
 */
 @media all and (max-width:740px){
     /* Body changes colour */
-    body{background-color: greenyellow;}
+    body{background-color: red;}
     /* Navigation list items change orientation and center*/
     header nav ul li{display:block;text-align:center;}
     /* Navigation list fills width of window */
@@ -115,5 +165,8 @@ Changes are made when the width of the page is less than 740px
         background-color:aqua;
         display:block;
         text-align:center;
+    }
+    .hide{
+        display:none;
     }
 }
