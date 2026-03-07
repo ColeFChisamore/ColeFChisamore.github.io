@@ -2,17 +2,28 @@
 /* Importing a font from google */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+:root{
+    --color1:rgb(255, 255, 122);
+    --color2:rgb(255, 210, 125);
+}
+
+
 body{
     background-color:white;
     color:black;
     font-family:"Space Grotesk", sans-serif;
+    margin:0%;
+    padding:0px 0px 0px;
 }
 
 /* 
 Header 
 */
 header{
-    background-color: orange;
+    background-color: var(--color2);
+    position:sticky;
+    top:0;
+    width:100%;
 }
 /* Logo
 - Keep logo to the left of the Header
@@ -54,11 +65,15 @@ header nav ul{
     margin:0;
     position:relative;
     float:left;
+    width:100%;
+    background-color: var(--color2);
 }
 /* Navigation Bar List Items*/
 header nav ul li{
     display:inline-block;
-    background-color: aqua;
+    background-color: var(--color1);
+    width:31%;
+    margin:1%;
 }
 /* Navigation Bar Links
 - display as a block
@@ -72,6 +87,7 @@ header nav a{
     font-size:16px;
     line-height:250%;
     text-decoration:none;
+    color:black;
 }
 /* Navigation Bar Links and Menu when hovered
 - changes colours
@@ -121,7 +137,7 @@ header nav a:hover, header nav .menu:hover{
 
 .footer{
     height:200px;
-    background-color: chartreuse;
+    background-color: var(--color2);
     text-align:center;
 }
 .footer div{
@@ -158,15 +174,13 @@ Changes are made when the width of the page is less than 740px
     /* Body changes colour */
     body{background-color: red;}
     /* Navigation list items change orientation and center*/
-    header nav ul li{display:block;text-align:center;}
-    /* Navigation list fills width of window */
-    header nav ul{width:100%;}
+    header nav ul li{display:block;text-align:center;width:98%;}
     /* Menu 
     - aligns and displays 
     */
     .menu{
         width:100%;
-        background-color:aqua;
+        background-color:var(--color1);
         display:block;
         text-align:center;
     }
