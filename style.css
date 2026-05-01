@@ -124,6 +124,7 @@ header nav a:hover, header nav .menu:hover{
     padding:10px;
     border-bottom:1px solid black;
     overflow:hidden;
+    padding:3% 10% 3%;
 }
 .main article p::first-letter{
     font-size:200%;
@@ -132,6 +133,9 @@ header nav a:hover, header nav .menu:hover{
 .main article div{
     font-size:200%;
 
+}
+.main article img{
+    margin-right: 5%;
 }
 
 
@@ -170,7 +174,7 @@ header nav a:hover, header nav .menu:hover{
 /* 
 Changes are made when the width of the page is less than 740px 
 */
-@media all and (max-width:740px){
+@media all and (max-width:1200px){
     /* Body changes colour */
     body{background-color: red;}
     /* Navigation list items change orientation and center*/
