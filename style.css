@@ -113,6 +113,8 @@ header nav a:hover, header nav .menu:hover{
 .main img{
     float:left;
     padding:10px;
+    height: 200px;
+    width:350px;
 }
 
 /* Main Articles
@@ -121,10 +123,9 @@ header nav a:hover, header nav .menu:hover{
 - prevent overflow between articles
 */
 .main article{
-    padding:10px;
     border-bottom:1px solid black;
     overflow:hidden;
-    padding:3% 10% 3%;
+    padding:3% 20% 3% 12%;
 }
 .main article p::first-letter{
     font-size:200%;
@@ -172,7 +173,7 @@ header nav a:hover, header nav .menu:hover{
 }
 
 /* 
-Changes are made when the width of the page is less than 740px 
+Changes are made when the width of the page is less than 1200px 
 */
 @media all and (max-width:1200px){
     /* Body changes colour */
@@ -190,5 +191,11 @@ Changes are made when the width of the page is less than 740px
     }
     .hide{
         display:none;
+    }
+    .main article{
+        padding:3% 8% 3%;
+    }
+    .main article p{
+        margin: 0%;
     }
 }
