@@ -72,7 +72,7 @@ header nav ul{
 header nav ul li{
     display:inline-block;
     background-color: var(--color1);
-    width: 22.8%;
+    width: 22%;
     margin:1%;
 }
 /* Navigation Bar Links
@@ -110,12 +110,6 @@ header nav a:hover, header nav .menu:hover{
     background-color: white;
 }
 
-.main img{
-    float:left;
-    padding:10px;
-    height: 200px;
-    width:350px;
-}
 
 /* Main Articles
 - pad around by 10px
@@ -126,6 +120,7 @@ header nav a:hover, header nav .menu:hover{
     border-bottom:1px solid black;
     overflow:hidden;
     padding:3% 20% 3% 12%;
+    display: inline-block;
 }
 .main article p::first-letter{
     font-size:200%;
@@ -137,11 +132,33 @@ header nav a:hover, header nav .menu:hover{
 }
 .main article img{
     margin-right: 5%;
+    display:block;
+    padding:10px;
+    height: 100%;
+    width:90%;
+    display:block;
+}
+
+.main .item{
+    font-size:100%;
+    width:49%;
+    display:inline-block;
+    vertical-align: middle;
+}
+.main .links{
+    margin-top: 5%;
+    font-size:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.main .subtitle-left{
+    display:none;
 }
 
 
+
 .footer{
-    height:200px;
+    height:130px;
     background-color: var(--color2);
     text-align:center;
 }
@@ -155,17 +172,14 @@ header nav a:hover, header nav .menu:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    height:20px;
 }
-.col1,.col3{
-    width:30%;
-}
-.col2{
-    width:40%;
+.col1,.col2{
+    width:50%;
 }
 .hide{
     display:block;
 }
-
 .footer .icon{
     width:20px;
     height:20px;
@@ -197,5 +211,11 @@ Changes are made when the width of the page is less than 1200px
     }
     .main article p{
         margin: 0%;
+    }
+    .main .subtitle-right{
+        display:none;
+    }
+    .main .subtitle-left{
+        display:block;
     }
 }
